@@ -7,6 +7,8 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./css/styles.css">
@@ -17,7 +19,7 @@
 <header class="bg-light shadow-sm">
     <nav class="navbar navbar-expand-lg container">
         <a class="navbar-brand" href="#">
-            <span class="text-primary fw-bold">CleopatraX</span>
+            <span class="text-primary fw-bold">Cleopatra Tutors Hub</span>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
@@ -25,10 +27,8 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link btn btn-primary text-white ms-2" href="contact.html#whatsapp-icon">Order Now</a></li>
                 <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-                <li class="nav-item"><a class="nav-link btn btn-primary text-white ms-2" href="#">Order Now</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -46,6 +46,15 @@
             </form>
         </div>
         <a href="index.html#featured-services" class="btn btn-outline-light btn-lg">Explore Our Services</a>
+    </div>
+</section>
+
+<!-- In index.html -->
+<section class="cta-section py-5">
+    <div class="container text-center">
+        <a href="about.html" class="btn btn-primary btn-lg about-cta">
+            <i class="fas fa-users me-2"></i>Meet Our Team
+        </a>
     </div>
 </section>
 
@@ -155,6 +164,21 @@
         </div>
     </div>
 </section>
+
+<section class="cta-section py-5">
+    <div class="container text-center">
+        <a href="contact.html" class="btn btn-primary btn-lg about-cta">
+            <i class="fas fa-shopping-cart me-2"></i>Order Now
+        </a>
+    </div>
+</section>
+
+<!-- WhatsApp Icon (Fixed on the Page) -->
+<div class="whatsapp-icon-fixed">
+    <a href="https://wa.me/15638728123" target="_blank" class="btn btn-success btn-circle">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+</div>
 
 <!-- Featured Services Section -->
 <section id="featured-services" class="featured-services py-6 position-relative">
@@ -329,6 +353,17 @@
     </div>
 </section><br><br>
 
+
+<!-- In index.html -->
+<section class="cta-section py-5">
+    <div class="container text-center">
+        <a href="contact.html" class="btn btn-primary btn-lg about-cta">
+            <i class="fas fa-shopping-cart me-2"></i>Order Now
+        </a>
+    </div>
+</section>
+
+
 <!-- Testimonials Section -->
 <section class="testimonials py-6 position-relative bg-light">
     <div class="container position-relative">
@@ -421,17 +456,26 @@
         <div class="row mt-6 g-4 justify-content-center align-items-center">
             <div class="col-auto">
                 <div class="trust-badge">
-                    <img src="bbb-rating.png" alt="A+ BBB Rating" loading="lazy">
+                    <img src="./images/testimonies/images.png" alt="A+ BBB Rating" loading="lazy">
                 </div>
             </div>
             <div class="col-auto">
                 <div class="trust-badge">
-                    <img src="trustpilot-rating.png" alt="Trustpilot 4.9 Rating" loading="lazy">
+                    <img src="./images/testimonies/trustpilot-slider.png" alt="Trustpilot 4.9 Rating" loading="lazy">
                 </div>
             </div>
         </div>
     </div>
 </section><br><br><br>
+
+<!-- In index.html -->
+<section class="cta-section py-5">
+    <div class="container text-center">
+        <a href="about.html" class="btn btn-primary btn-lg about-cta">
+            <i class="fas fa-users me-2"></i>Meet Our Team
+        </a>
+    </div>
+</section><br><br>
 
 
 
@@ -441,7 +485,7 @@
             <!-- Contact & About -->
             <div class="col-lg-4">
                 <div class="pe-xl-5">
-                    <h3 class="h4 text-light mb-4">Cleopatra<span class="text-primary">X</span></h3>
+                    <h3 class="h4 text-light mb-4">Cleopatra<span class="text-primary">Tutors Hub</span></h3>
                     <ul class="list-unstyled text-muted">
                         <li class="mb-3 d-flex align-items-center">
                             <i class="fas fa-envelope text-primary me-3"></i>
@@ -449,7 +493,7 @@
                         </li>
                         <li class="mb-3 d-flex align-items-center">
                             <i class="fas fa-phone text-primary me-3"></i>
-                            <a href="tel:+15551234567" class="text-reset text-decoration-none hover-underline"></a>
+                            <a href="tel:+15638728123" class="text-reset text-decoration-none hover-underline">+1 (563) 872-8123</a>
                         </li>
                         <li class="d-flex align-items-start mt-4">
                             <i class="fas fa-map-marker-alt text-primary mt-1 me-3"></i>
@@ -588,5 +632,8 @@
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="./js/script.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/YOUR_FONT_AWESOME_KIT.js" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -8,50 +8,32 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
         <!-- Font Awesome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        
         <!-- Custom CSS -->
         <link rel="stylesheet" href="./css/services.css">
     </head>
 <body>
-    <header class="header bg-light shadow-sm fixed-top">
-        <nav class="navbar navbar-expand-lg container py-3">
-            <a class="navbar-brand" href="#">
-                <span class="text-primary fw-bold fs-3">CleopatraX</span>
-                <span class="text-muted fs-6 d-block d-lg-inline">Guiding You to Academic Greatness</span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto align-items-lg-center">
-                    <li class="nav-item mx-2">
-                        <a class="nav-link position-relative px-3" href="index.html">
-                            <span class="nav-link-text">Home</span>
-                        </a>
-                    </li>
-                    <li class="nav-item mx-2 active">
-                        <a class="nav-link position-relative px-3" href="services.html">
-                            <span class="nav-link-text">Services</span>
-                        </a>
-                    </li>
-                    <li class="nav-item mx-2">
-                        <a class="nav-link btn btn-primary text-white px-4 py-2 ms-lg-3" href="#">
-                            <i class="fas fa-paper-plane me-2"></i>Order Now
-                        </a>
-                    </li>
-                    <li class="nav-item mx-2">
-                        <a class="nav-link position-relative px-3" href="#">
-                            <span class="nav-link-text">Login</span>
-                        </a>
-                    </li>
-                    <li class="nav-item mx-2">
-                        <a class="nav-link position-relative px-3" href="#">
-                            <span class="nav-link-text">Contact</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+   <!-- Header (Same as index.html with active About link) -->
+<header class="bg-light shadow-sm">
+    <nav class="navbar navbar-expand-lg container">
+        <a class="navbar-brand" href="#">
+            <span class="text-primary fw-bold">Cleopatra Tutors Hub</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link btn btn-primary text-white ms-2" href="contact.html#whatsapp-icon">Order Now</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
 
 
     <!-- Services Hero Section -->
@@ -107,67 +89,288 @@
     </div>
 </section>
 
-    <!-- Services Listing Section -->
-    <section class="services-listing py-6 bg-light">
-        <div class="container">
-            <div class="text-center mb-6">
-                <h1 class="display-5 mb-3">Academic Support Services</h1>
-                <p class="lead text-muted">Expert assistance across all academic disciplines</p>
-            </div>
-
-            <div class="row g-4 service-grid">
-                <!-- Essay Writing Service -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-card bg-white p-4 rounded-4 shadow-sm transition-all">
-                        <div class="service-icon mb-4">
-                            <i class="fas fa-pen-nib fa-3x text-primary"></i>
-                        </div>
-                        <h3 class="h4 mb-3">Essay Writing</h3>
-                        <div class="service-details">
-                            <p class="text-muted mb-4">Comprehensive essay writing service from topic selection to final draft, including:</p>
-                            <ul class="service-features list-unstyled">
-                                <li class="mb-2 d-flex">
-                                    <i class="fas fa-check-circle text-success me-2"></i>
-                                    MLA/APA/Chicago formatting
-                                </li>
-                                <li class="mb-2 d-flex">
-                                    <i class="fas fa-check-circle text-success me-2"></i>
-                                    Thesis statement development
-                                </li>
-                                <li class="mb-2 d-flex">
-                                    <i class="fas fa-check-circle text-success me-2"></i>
-                                    Peer-reviewed sources
-                                </li>
-                            </ul>
-                        </div>
-                        <a href="order-form.html" class="btn btn-primary w-100 mt-4 py-3">
-                            Start Now <i class="fas fa-arrow-right ms-2"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Repeat similar structure for other services -->
-                <!-- Research Papers Service -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-card bg-white p-4 rounded-4 shadow-sm transition-all">
-                        <div class="service-icon mb-4">
-                            <i class="fas fa-file-alt fa-3x text-danger"></i>
-                        </div>
-                        <h3 class="h4 mb-3">Research Papers</h3>
-                        <div class="service-details">
-                            <!-- Service details content -->
-                        </div>
-                        <a href="order-form.html" class="btn btn-primary w-100 mt-4 py-3">
-                            Start Now <i class="fas fa-arrow-right ms-2"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Add other services following the same pattern -->
-            </div>
+<!-- Services Listing Section -->
+<section class="services-listing py-6 bg-light">
+    <div class="container">
+        <div class="text-center mb-6">
+            <h1 class="display-5 mb-3">Academic Support Services</h1>
+            <p class="lead text-muted">Expert assistance across all academic disciplines</p>
         </div>
-    </section>
 
+        <div class="row g-4 service-grid">
+            <!-- Essay Writing Service -->
+            <div class="col-lg-4 col-md-6">
+                <div class="service-card bg-white p-4 rounded-4 shadow-sm transition-all">
+                    <div class="service-icon mb-4">
+                        <i class="fas fa-pen-nib fa-3x text-primary"></i>
+                    </div>
+                    <h3 class="h4 mb-3">Essay Writing</h3>
+                    <div class="service-details">
+                        <p class="text-muted mb-4">Comprehensive essay writing service from topic selection to final draft, including:</p>
+                        <ul class="service-features list-unstyled">
+                            <li class="mb-2 d-flex">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                MLA/APA/Chicago formatting
+                            </li>
+                            <li class="mb-2 d-flex">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                Thesis statement development
+                            </li>
+                            <li class="mb-2 d-flex">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                Peer-reviewed sources
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="contact.html" class="btn btn-primary w-100 mt-4 py-3">
+                        Start Now <i class="fas fa-arrow-right ms-2"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Research Papers -->
+            <div class="col-lg-4 col-md-6">
+                <div class="service-card bg-white p-4 rounded-4 shadow-sm transition-all">
+                    <div class="service-icon mb-4">
+                        <i class="fas fa-file-alt fa-3x text-danger"></i>
+                    </div>
+                    <h3 class="h4 mb-3">Research Papers</h3>
+                    <div class="service-details">
+                        <p class="text-muted mb-4">In-depth research papers with rigorous analysis, including:</p>
+                        <ul class="service-features list-unstyled">
+                            <li class="mb-2 d-flex">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                Statistical analysis
+                            </li>
+                            <li class="mb-2 d-flex">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                Primary research integration
+                            </li>
+                            <li class="mb-2 d-flex">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                Literature review section
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="contact.html" class="btn btn-primary w-100 mt-4 py-3">
+                        Start Now <i class="fas fa-arrow-right ms-2"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Dissertation Writing -->
+            <div class="col-lg-4 col-md-6">
+                <div class="service-card bg-white p-4 rounded-4 shadow-sm transition-all">
+                    <div class="service-icon mb-4">
+                        <i class="fas fa-book fa-3x text-warning"></i>
+                    </div>
+                    <h3 class="h4 mb-3">Dissertation Writing</h3>
+                    <div class="service-details">
+                        <p class="text-muted mb-4">Advanced doctoral dissertation services featuring:</p>
+                        <ul class="service-features list-unstyled">
+                            <li class="mb-2 d-flex">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                Chapter-by-chapter development
+                            </li>
+                            <li class="mb-2 d-flex">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                Data analysis support
+                            </li>
+                            <li class="mb-2 d-flex">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                Defense preparation
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="contact.html" class="btn btn-primary w-100 mt-4 py-3">
+                        Start Now <i class="fas fa-arrow-right ms-2"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Thesis Assistance -->
+            <div class="col-lg-4 col-md-6">
+                <div class="service-card bg-white p-4 rounded-4 shadow-sm transition-all">
+                    <div class="service-icon mb-4">
+                        <i class="fas fa-graduation-cap fa-3x text-info"></i>
+                    </div>
+                    <h3 class="h4 mb-3">Thesis Assistance</h3>
+                    <div class="service-details">
+                        <p class="text-muted mb-4">Master's thesis support from proposal to defense:</p>
+                        <ul class="service-features list-unstyled">
+                            <li class="mb-2 d-flex">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                Methodology design
+                            </li>
+                            <li class="mb-2 d-flex">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                Data interpretation
+                            </li>
+                            <li class="mb-2 d-flex">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                Final editing & formatting
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="contact.html" class="btn btn-primary w-100 mt-4 py-3">
+                        Start Now <i class="fas fa-arrow-right ms-2"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Editing & Proofreading -->
+            <div class="col-lg-4 col-md-6">
+                <div class="service-card bg-white p-4 rounded-4 shadow-sm transition-all">
+                    <div class="service-icon mb-4">
+                        <i class="fas fa-check-circle fa-3x text-success"></i>
+                    </div>
+                    <h3 class="h4 mb-3">Editing & Proofreading</h3>
+                    <div class="service-details">
+                        <p class="text-muted mb-4">Professional polishing services for existing work:</p>
+                        <ul class="service-features list-unstyled">
+                            <li class="mb-2 d-flex">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                Grammar & syntax check
+                            </li>
+                            <li class="mb-2 d-flex">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                Plagiarism scan
+                            </li>
+                            <li class="mb-2 d-flex">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                Style consistency review
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="contact.html" class="btn btn-primary w-100 mt-4 py-3">
+                        Start Now <i class="fas fa-arrow-right ms-2"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Coursework Help -->
+            <div class="col-lg-4 col-md-6">
+                <div class="service-card bg-white p-4 rounded-4 shadow-sm transition-all">
+                    <div class="service-icon mb-4">
+                        <i class="fas fa-tasks fa-3x text-purple"></i>
+                    </div>
+                    <h3 class="h4 mb-3">Coursework Help</h3>
+                    <div class="service-details">
+                        <p class="text-muted mb-4">Comprehensive academic support for ongoing courses:</p>
+                        <ul class="service-features list-unstyled">
+                            <li class="mb-2 d-flex">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                Weekly assignments
+                            </li>
+                            <li class="mb-2 d-flex">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                Discussion posts
+                            </li>
+                            <li class="mb-2 d-flex">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                Final projects
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="contact.html" class="btn btn-primary w-100 mt-4 py-3">
+                        Start Now <i class="fas fa-arrow-right ms-2"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Case Studies -->
+            <div class="col-lg-4 col-md-6">
+                <div class="service-card bg-white p-4 rounded-4 shadow-sm transition-all">
+                    <div class="service-icon mb-4">
+                        <i class="fas fa-briefcase fa-3x text-teal"></i>
+                    </div>
+                    <h3 class="h4 mb-3">Case Studies</h3>
+                    <div class="service-details">
+                        <p class="text-muted mb-4">Detailed business and medical case analyses:</p>
+                        <ul class="service-features list-unstyled">
+                            <li class="mb-2 d-flex">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                Real-world scenarios
+                            </li>
+                            <li class="mb-2 d-flex">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                Solution proposals
+                            </li>
+                            <li class="mb-2 d-flex">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                Presentation-ready formats
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="contact.html" class="btn btn-primary w-100 mt-4 py-3">
+                        Start Now <i class="fas fa-arrow-right ms-2"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Literature Reviews -->
+            <div class="col-lg-4 col-md-6">
+                <div class="service-card bg-white p-4 rounded-4 shadow-sm transition-all">
+                    <div class="service-icon mb-4">
+                        <i class="fas fa-search-plus fa-3x text-orange"></i>
+                    </div>
+                    <h3 class="h4 mb-3">Literature Reviews</h3>
+                    <div class="service-details">
+                        <p class="text-muted mb-4">Thorough examination of existing research:</p>
+                        <ul class="service-features list-unstyled">
+                            <li class="mb-2 d-flex">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                Source synthesis
+                            </li>
+                            <li class="mb-2 d-flex">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                Critical analysis
+                            </li>
+                            <li class="mb-2 d-flex">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                Gap identification
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="contact.html" class="btn btn-primary w-100 mt-4 py-3">
+                        Start Now <i class="fas fa-arrow-right ms-2"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Term Papers -->
+            <div class="col-lg-4 col-md-6">
+                <div class="service-card bg-white p-4 rounded-4 shadow-sm transition-all">
+                    <div class="service-icon mb-4">
+                        <i class="fas fa-file-contract fa-3x text-pink"></i>
+                    </div>
+                    <h3 class="h4 mb-3">Term Papers</h3>
+                    <div class="service-details">
+                        <p class="text-muted mb-4">End-of-term comprehensive papers:</p>
+                        <ul class="service-features list-unstyled">
+                            <li class="mb-2 d-flex">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                Course-specific requirements
+                            </li>
+                            <li class="mb-2 d-flex">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                Instructor guidelines
+                            </li>
+                            <li class="mb-2 d-flex">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                Rubric alignment
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="contact.html" class="btn btn-primary w-100 mt-4 py-3">
+                        Start Now <i class="fas fa-arrow-right ms-2"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
     <!-- Order Process Section -->
     <section class="order-process py-6 bg-white">
         <div class="container">
@@ -235,6 +438,13 @@
             </div>
         </div>
     </section><br><br><br>
+    
+    <!-- WhatsApp Icon (Fixed on the Page) -->
+    <div class="whatsapp-icon-fixed">
+        <a href="https://wa.me/15638728123" target="_blank" class="btn btn-success btn-circle">
+            <i class="bi bi-whatsapp"></i>
+        </a>
+    </div>
 
     <footer class="footer bg-dark position-relative">
         <div class="container pt-6 pb-4">
@@ -242,7 +452,7 @@
                 <!-- Contact & About -->
                 <div class="col-lg-4">
                     <div class="pe-xl-5">
-                        <h3 class="h4 text-light mb-4">Cleopatra<span class="text-primary">X</span></h3>
+                        <h3 class="h4 text-light mb-4">Cleopatra<span class="text-primary">Tutors Hub</span></h3>
                         <ul class="list-unstyled text-muted">
                             <li class="mb-3 d-flex align-items-center">
                                 <i class="fas fa-envelope text-primary me-3"></i>
@@ -250,7 +460,7 @@
                             </li>
                             <li class="mb-3 d-flex align-items-center">
                                 <i class="fas fa-phone text-primary me-3"></i>
-                                <a href="tel:+15551234567" class="text-reset text-decoration-none hover-underline"></a>
+                                <a href="tel:+15638728123" class="text-reset text-decoration-none hover-underline">+1 (563) 872-8123</a>
                             </li>
                             <li class="d-flex align-items-start mt-4">
                                 <i class="fas fa-map-marker-alt text-primary mt-1 me-3"></i>

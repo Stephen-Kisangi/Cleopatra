@@ -4,118 +4,6 @@
     --accent-color: #e74c3c;
     --light-bg: #f8f9fa;
 }
-
-/* Services Hero Section */
-.services-hero {
-    background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.9)),
-    url('../images/hero/DALL·E 2025-02-17 17.42.04 - A professional tutor helping a group of students in a modern academic setting. The tutor, a well-dressed educator, is standing at the front of a sleek.webp');
-background-size: cover;
-background-position: center;
-height: 80;
-}
-
-.hero-shapes {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    pointer-events: none;
-    z-index: 0;
-}
-
-.shape {
-    position: absolute;
-    border-radius: 50%;
-    filter: blur(80px);
-    opacity: 0.15;
-    animation: float 25s infinite linear;
-}
-
-.shape-1 {
-    width: 400px;
-    height: 400px;
-    background: var(--primary-color);
-    top: 20%;
-    left: -10%;
-}
-
-.shape-2 {
-    width: 300px;
-    height: 300px;
-    background: var(--secondary-color);
-    bottom: -10%;
-    right: -5%;
-}
-
-.search-bar {
-    max-width: 600px;
-    transition: transform 0.3s ease;
-}
-
-.search-bar:hover {
-    transform: scale(1.02);
-}
-
-.input-group {
-    border-radius: 50rem !important;
-    overflow: hidden;
-}
-
-.form-control {
-    padding: 1.25rem 1.5rem;
-    border: none !important;
-}
-
-.btn-primary {
-    padding: 1rem 1.5rem;
-}
-
-.trust-badges {
-    position: relative;
-    z-index: 1;
-}
-
-.badge-item {
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(10px);
-    padding: 0.5rem 1rem;
-    border-radius: 50rem;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-@keyframes float {
-    0%, 100% { transform: translate(0, 0) rotate(0deg); }
-    25% { transform: translate(10px, 10px) rotate(5deg); }
-    50% { transform: translate(-10px, 15px) rotate(-5deg); }
-    75% { transform: translate(15px, -10px) rotate(3deg); }
-}
-
-@media (max-width: 768px) {
-    .services-hero {
-        /*min-height: 60vh;
-        margin-top: 60px;*/
-    }
-
-    @media (max-width: 768px) {
-        .hero h1 {
-            font-size: 2rem;
-        }
-        
-        .hero .btn {
-            width: 100%;
-        }
-    }
-    
-    .display-3 {
-        font-size: 2.5rem !important;
-    }
-    
-    .form-control {
-        padding: 1rem;
-    }
-}
-
 .btn-primary {
     background-color: var(--secondary-color);
     border: none;
@@ -131,83 +19,47 @@ height: 80;
     color: var(--primary-color) !important;
 }
 
-/* Services Listing */
-.service-card {
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    border: 1px solid rgba(0,0,0,0.05);
+/* Custom Styles */
+.about-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                url('https://images.unsplash.com/photo-1497633762265-9d179a990aa6') center/cover;
+    padding: 100px 0;
 }
 
-.service-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+.team-card {
+    transition: transform 0.3s;
+    border: none;
 }
 
-.service-features li {
-    padding: 8px 0;
-    border-bottom: 1px solid rgba(0,0,0,0.05);
+.team-card:hover {
+    transform: translateY(-10px);
 }
 
-.step-number {
-    width: 60px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-    font-weight: bold;
-    transition: all 0.3s ease;
+.whatsapp-btn {
+    background: #25D366;
+    border: none;
+    transition: all 0.3s;
 }
 
-.process-step {
-    position: relative;
-    background: rgba(255,255,255,0.8);
-    backdrop-filter: blur(10px);
-    border-radius: 1rem;
-    overflow: hidden;
+.whatsapp-btn:hover {
+    background: #128C7E;
+    transform: scale(1.05);
 }
 
-.process-step::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: linear-gradient(45deg, 
-        transparent 0%,
-        rgba(52, 152, 219, 0.1) 50%,
-        transparent 100%
-    );
-    transform: rotate(45deg);
-    animation: processGlow 6s infinite linear;
+.counter {
+    font-weight: 700;
 }
 
-@keyframes processGlow {
-    0% { transform: rotate(45deg) translate(-50%, -50%); }
-    100% { transform: rotate(45deg) translate(50%, 50%); }
+.about-cta {
+    padding: 15px 40px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: all 0.3s;
 }
 
-/* Progress Connector */
-.process-steps::before {
-    content: '';
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 70%;
-    height: 2px;
-    background: linear-gradient(to right, 
-        transparent 0%,
-        var(--primary-color) 50%,
-        transparent 100%
-    );
-    z-index: -1;
-}
-
-@media (max-width: 768px) {
-    .process-steps::before {
-        display: none;
-    }
+.about-cta:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
 /* WhatsApp Icon (Fixed on the Left Side of the Window) */
@@ -397,6 +249,7 @@ address i {
     }
     
     .payment-icons i {
+    
         font-size: 1.8rem;
         margin: 0 4px;
     }
@@ -419,4 +272,16 @@ a:focus-visible {
 
 .subscription-form.success .success-message {
     display: block;
+}
+
+
+.bg-primary {
+    background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.9)),
+                url('../images/hero/DALL·E 2025-02-17 17.42.04 - A professional tutor helping a group of students in a modern academic setting. The tutor, a well-dressed educator, is standing at the front of a sleek.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+.py-5 .bg-light .col-lg-6{
+    background: linear-gradient(135deg, var(--primary-blue), var(--primary-purple));
 }

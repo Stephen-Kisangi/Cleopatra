@@ -1,0 +1,385 @@
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --accent-color: #e74c3c;
+    --light-bg: #f8f9fa;
+}
+
+.btn-primary {
+    background-color: var(--secondary-color);
+    border: none;
+    padding: 0.75rem 1.5rem;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    color: var(--primary-color) !important;
+}
+
+/* WhatsApp Contact Section */
+.whatsapp-card {
+    transition: transform 0.3s ease;
+    background: rgba(255, 255, 255, 0.9);
+    color: #000;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.whatsapp-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* WhatsApp Attention-Grabbing Button */
+.btn-success {
+    background-color: #25D366;
+    border-color: #25D366;
+    color: #fff;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 18px;
+    text-transform: uppercase;
+    animation: waveColors 3s infinite alternate, pulseGlow 1.5s infinite alternate, illuminate 2s infinite alternate;
+    box-shadow: 0 0 10px rgba(37, 211, 102, 0.5);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.btn-success:hover {
+    background-color: #128C7E;
+    border-color: #128C7E;
+    box-shadow: 0 0 30px rgba(18, 140, 126, 1);
+    transform: scale(1.1);
+}
+
+/* Waving Color Effect */
+@keyframes waveColors {
+    0% {
+        background-color: #25D366;
+        border-color: #25D366;
+    }
+    33% {
+        background-color: #34B7F1;
+        border-color: #34B7F1;
+    }
+    66% {
+        background-color: #128C7E;
+        border-color: #128C7E;
+    }
+    100% {
+        background-color: #25D366;
+        border-color: #25D366;
+    }
+}
+
+/* Pulsating Glow Effect */
+@keyframes pulseGlow {
+    0% {
+        box-shadow: 0 0 10px rgba(37, 211, 102, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 25px rgba(37, 211, 102, 1);
+    }
+}
+
+/* Text & Outline Illumination */
+@keyframes illuminate {
+    0% {
+        text-shadow: 0 0 5px #25D366, 0 0 10px #25D366, 0 0 20px #25D366;
+    }
+    100% {
+        text-shadow: 0 0 10px #25D366, 0 0 20px #25D366, 0 0 40px #25D366;
+    }
+}
+
+
+
+
+.info-card {
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.9);
+    color: #000;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.info-card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+}
+
+.contact-section {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, rgba(15, 32, 39, 0.95) 0%, rgba(32, 58, 67, 0.95) 50%, rgba(44, 83, 100, 0.95) 100%),
+                url('https://images.unsplash.com/photo-1497864149936-d3163f0c0f4b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact-info h4 {
+    color: #fff !important;
+    font-size: 2.0rem;
+    
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.whatsapp-card {
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #000;
+}
+
+.whatsapp-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+}
+
+.info-card {
+    background: rgba(255, 255, 255, 0.9);
+    color: #000;
+}
+
+.info-card:hover {
+    background: rgba(255, 255, 255, 1);
+    transform: translateY(-5px);
+}
+
+/* WhatsApp Icon Animation */
+#whatsapp-icon {
+    position: relative;
+    display: inline-block;
+}
+
+#whatsapp-icon::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #25D366;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(0.8); opacity: 0.8; }
+    100% { transform: scale(1.5); opacity: 0; }
+}
+
+/* Scroll Animation */
+@media (prefers-reduced-motion: no-preference) {
+    .contact-section [data-scroll] {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 0.6s ease;
+    }
+    
+    .contact-section [data-scroll].visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+/* Footer Styles */
+.footer {
+    --footer-primary: hsl(210, 29%, 24%);
+    --footer-secondary: hsl(210, 17%, 35%);
+    --footer-accent: hsl(204, 70%, 53%);
+    --text-primary: hsl(0, 0%, 85%);  /* New text color variable */
+    --text-secondary: hsl(0, 0%, 65%);
+    background: linear-gradient(160deg, var(--footer-primary), #1a1a1a);
+    color: var(--text-primary);
+}
+
+.footer a {
+    color: var(--text-primary);
+    text-decoration: none;
+}
+
+.footer h3, .footer h4 {
+    color: var(--text-primary) !important;
+    letter-spacing: 0.5px;
+}
+
+.footer .text-muted {
+    color: var(--text-secondary) !important;
+}
+
+/* Enhanced Visibility Modifications */
+.hover-lift {
+    transition: transform 0.25s ease, color 0.3s ease, filter 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-2px);
+    color: var(--footer-accent) !important;
+    filter: brightness(1.2);
+}
+
+/* Improved Form Visibility */
+.subscription-form .form-control {
+    background: rgba(255, 255, 255, 0.05) !important;
+    border-color: rgba(255, 255, 255, 0.1) !important;
+    color: var(--text-primary) !important;
+}
+
+.subscription-form .form-control::placeholder {
+    color: var(--text-secondary) !important;
+    opacity: 0.8;
+}
+
+/* Enhanced Social Icons */
+.social-links i {
+    font-size: 1.3rem;
+    padding: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.social-links i:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: scale(1.15);
+}
+
+/* Better Payment Icons Visibility */
+.payment-icons i {
+    font-size: 2rem;
+    opacity: 0.9;
+    margin: 0 6px;
+    transition: opacity 0.3s ease;
+}
+
+.payment-icons i:hover {
+    opacity: 1;
+}
+
+/* Enhanced Borders */
+.border-dark {
+    border-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+/* Legal Links Emphasis */
+.footer .legal-links {
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.footer .legal-links::before {
+    content: "⚖️";
+    position: absolute;
+    left: 0;
+    top: 2px;
+    filter: grayscale(1) brightness(1.5);
+}
+
+/* Address Block Enhancement */
+address {
+    line-height: 1.6;
+    position: relative;
+    padding-left: 2rem;
+}
+
+address i {
+    position: absolute;
+    left: 0;
+    top: 0.2em;
+}
+
+/* Service List Enhancements */
+.footer ul li {
+    margin-bottom: 0.8rem !important;
+    position: relative;
+    padding-left: 1rem;
+}
+
+.footer ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--footer-accent);
+    opacity: 0.7;
+}
+
+/* Language Selector */
+.form-select {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    color: var(--text-primary) !important;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+}
+
+/* Copyright Section */
+.bg-black {
+    background: rgba(0, 0, 0, 0.3) !important;
+    backdrop-filter: blur(4px);
+}
+
+/* Mobile Optimization */
+@media (max-width: 768px) {
+    .footer {
+        text-align: center;
+    }
+    
+    address {
+        padding-left: 0;
+    }
+    
+    .footer ul li::before {
+        display: none;
+    }
+    
+    .social-links i {
+        margin: 0 8px;
+    }
+    
+    .payment-icons i {
+    
+        font-size: 1.8rem;
+        margin: 0 4px;
+    }
+}
+
+/* Focus States Enhancement */
+a:focus-visible {
+    outline: 2px solid var(--footer-accent);
+    outline-offset: 3px;
+    border-radius: 2px;
+}
+
+/* Newsletter Success State */
+.subscription-form .success-message {
+    display: none;
+    color: var(--footer-accent);
+    font-size: 0.9em;
+    margin-top: 0.5rem;
+}
+
+.subscription-form.success .success-message {
+    display: block;
+}
