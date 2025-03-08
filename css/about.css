@@ -26,24 +26,218 @@
     padding: 100px 0;
 }
 
-.team-card {
-    transition: transform 0.3s;
-    border: none;
+/* Institutional Profile Styling */
+.institutional-profile {
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
 }
 
-.team-card:hover {
-    transform: translateY(-10px);
+.academic-badge {
+    position: relative;
+    display: inline-block;
 }
 
-.whatsapp-btn {
-    background: #25D366;
-    border: none;
-    transition: all 0.3s;
+.badge-text {
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #2c3e50;
+    padding: 8px 20px;
+    background: rgba(46, 204, 113, 0.1);
+    border-radius: 30px;
+    border: 2px solid #2ecc71;
 }
 
-.whatsapp-btn:hover {
-    background: #128C7E;
-    transform: scale(1.05);
+.academic-pillar {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 2rem;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.pillar-counter {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgba(46, 204, 113, 0.15);
+}
+
+.pillar-icon {
+    margin-bottom: 1.5rem;
+    color: blue;
+   
+}
+
+.pillar-icon img {
+    filter: drop-shadow(0 4px 6px rgba(46, 204, 113, 0.1));
+}
+
+.academic-pillar:hover {
+    transform: translateY(-5px);
+}
+
+.credential-item {
+    text-align: center;
+    padding: 1rem;
+    border-right: 2px solid #eee;
+}
+
+.credential-item:last-child {
+    border-right: 0;
+}
+
+.credential-value {
+    color: #2ecc71;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.credential-label {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    margin-top: 0.5rem;
+}
+
+@media (max-width: 992px) {
+    .pillar-counter {
+        display: none;
+    }
+    
+    .academic-pillar {
+        padding: 1.5rem;
+    }
+}
+
+
+/* Team Section Styles */
+.team-section {
+    background: linear-gradient(45deg, #f8f9fa 0%, #ffffff 100%);
+}
+
+.section-intro h2 {
+    font-weight: 700;
+    letter-spacing: -0.05em;
+    color: #2c3e50;
+}
+
+.member-photo {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.framed-photo::before {
+    content: '';
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    border: 3px solid rgba(46, 204, 113, 0.3);
+    top: 5%;
+    left: 5%;
+    z-index: 1;
+}
+
+.member-name {
+    font-weight: 700;
+    color: #2c3e50;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.member-name::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: #2ecc71;
+}
+
+.member-description {
+    color: #34495e;
+    line-height: 1.7;
+}
+
+/* Academic CTA Styling */
+.academic-cta {
+    display: block;
+    text-decoration: none;
+    background: #ffffff;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 1.25rem;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.cta-prefix {
+    display: block;
+    font-size: 0.9rem;
+    color: #2ecc71;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.5rem;
+}
+
+.cta-main {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: #2c3e50;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.cta-sub {
+    display: block;
+    font-size: 0.85rem;
+    color: #7f8c8d;
+    font-weight: 400;
+    margin-left: auto;
+}
+
+.academic-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(46, 204, 113, 0.1);
+    border-color: #2ecc71;
+}
+
+.academic-cta:hover .cta-prefix {
+    color: #27ae60;
+}
+
+.fa-whatsapp {
+    color: #25D366;
+    font-size: 1.4rem;
+}
+
+@media (max-width: 768px) {
+    .cta-main {
+        flex-wrap: wrap;
+    }
+    
+    .cta-sub {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+@media (max-width: 992px) {
+    .member-bio {
+        padding-left: 0 !important;
+        text-align: center;
+    }
+    
+    .member-name::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .team-member {
+        margin-bottom: 4rem !important;
+    }
 }
 
 .counter {
